@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>8-Puzzle Solver</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url('images/wallpaperflare.com_wallpaper.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed;">
+    <h1>8-Puzzle Solver</h1>
+
+    <div class="main-container">
+        <div class="puzzle-container">
+            <div class="randomize-button">
+                <button class="button-49" id="randomizeButton" onclick="randomizeTiles()">Randomize</button>
+            </div>
+
+            <div class="puzzle" id="puzzle">
+                <!-- Puzzle tiles will be generated here -->
+            </div>
+
+            <div class="moves">
+                <p>pushed States:</br></br> <span id="moveCount">0</span></p>
+            </div>
+        </div>
+
+        <div class="solve-container">
+            <button id="solveButton">Solve</button>
+            <select id="algorithmSelect" placeholder="Algorithm">
+                <option value="dfs">Depth First Search</option>
+                <option value="bfs">Breadth First Search</option>
+                <option value="astar">A*</option>
+                <option value="gbfs">Greedy Best 1st Search</option>
+                <option value="ucs">Uniform Cost Search</option>>
+                <option value="dijkstra">Dijkastra's algorithm</option>
+                <option value="GA">Genetic Search (under development)</option>
+                <option value="HC">Hill Climbing</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
