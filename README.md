@@ -12,11 +12,6 @@ This project is an 8-puzzle solver with an interactive interface. It allows user
 ## Getting Started
 To run the 8-puzzle solver, open the `index.html` file in a modern web browser. Follow the steps below to set up the project.
 
-### Clone the Repository
-```bash
-git clone https://github.com/yourusername/8-puzzle-solver.git
-cd 8-puzzle-solver
-```
 
 ## Open the Project
 1. Open the `index.html` file in your browser.
